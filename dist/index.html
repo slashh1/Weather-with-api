@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app Build</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .loader img {
+        height: 5.5rem;
+        width: 5.5rem;
+
+        transform-origin: 44% 50%;
+        animation: rotate 1.5s infinite linear;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="d-flex justify-content-center active">
+        Weather Forecast &nbsp;<button class="sub btn btn-info">
+          View
+        </button>
+      </h1>
+
+      <div class="row d-flex justify-content-center load"></div>
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>
